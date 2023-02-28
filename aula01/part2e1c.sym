@@ -1,0 +1,19 @@
+GAS LISTING part2e1c.s 			page 1
+
+
+DEFINED SYMBOLS
+          part2e1c.s:22     *ABS*:0000000000000005 READ_INT10
+          part2e1c.s:23     *ABS*:0000000000000007 PRINT_INT10
+          part2e1c.s:24     *ABS*:0000000000000006 PRINT_INT
+          part2e1c.s:25     *ABS*:0000000000000008 PRINT_STRING
+          part2e1c.s:27     .data:0000000000000000 str1
+          part2e1c.s:28     .data:000000000000002a str2
+          part2e1c.s:29     .data:0000000000000047 str3
+          part2e1c.s:30     .data:000000000000005a str4
+          part2e1c.s:31     .data:000000000000006e str5
+          part2e1c.s:32     .data:000000000000008d str6
+          part2e1c.s:35     .text:0000000000000000 main
+          part2e1c.s:36     .text:0000000000000000 while
+          part2e1c.s:83     .text:00000000000000c4 endwhile
+
+NO UNDEFINED SYMBOLS

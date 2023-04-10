@@ -1,0 +1,23 @@
+GAS LISTING part2e3.s 			page 1
+
+
+DEFINED SYMBOLS
+           part2e3.s:26     *ABS*:000000000000000b READ_CORE_TIMER
+           part2e3.s:27     *ABS*:000000000000000c RESET_CORE_TIMER
+           part2e3.s:28     *ABS*:0000000000000003 PUT_CHAR
+           part2e3.s:29     *ABS*:0000000000000006 PRINT_INT
+           part2e3.s:30     *ABS*:0000000000000001 INKEY
+           part2e3.s:33     .text:0000000000000000 main
+           part2e3.s:46     .text:0000000000000028 while
+           part2e3.s:50     .text:0000000000000030 ifmod
+           part2e3.s:54     .text:0000000000000040 elmode
+           part2e3.s:58     .text:0000000000000050 endmod
+           part2e3.s:129    .text:0000000000000110 delay
+           part2e3.s:62     .text:000000000000005c if1
+           part2e3.s:71     .text:0000000000000074 if2
+           part2e3.s:80     .text:000000000000008c endif
+           part2e3.s:110    .text:00000000000000f4 endw
+           part2e3.s:133    .text:0000000000000124 while2
+           part2e3.s:137    .text:0000000000000138 endw2
+
+NO UNDEFINED SYMBOLS

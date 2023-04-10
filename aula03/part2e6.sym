@@ -1,0 +1,24 @@
+GAS LISTING part2e6.s 			page 1
+
+
+DEFINED SYMBOLS
+           part2e6.s:1      *ABS*:000000000000bf88 SFR_BASE_HI
+           part2e6.s:2      *ABS*:0000000000006050 PORTB
+           part2e6.s:3      *ABS*:0000000000006040 TRISB
+           part2e6.s:4      *ABS*:0000000000006100 TRISE
+           part2e6.s:5      *ABS*:0000000000006120 LATE
+           part2e6.s:7      *ABS*:000000000000000b READ_CORE_TIMER
+           part2e6.s:8      *ABS*:000000000000000c RESET_CORE_TIMER
+           part2e6.s:9      *ABS*:0000000000000007 PRINT_INT10
+           part2e6.s:14     .text:0000000000000000 main
+           part2e6.s:31     .text:0000000000000030 while1
+           part2e6.s:76     .text:00000000000000a4 delay
+           part2e6.s:46     .text:0000000000000054 if0
+           part2e6.s:50     .text:0000000000000064 if15
+           part2e6.s:57     .text:0000000000000088 endif
+           part2e6.s:52     .text:000000000000007c elsif
+           part2e6.s:55     .text:0000000000000084 else
+           part2e6.s:62     .text:0000000000000090 endwhile
+           part2e6.s:79     .text:00000000000000ac while2
+
+NO UNDEFINED SYMBOLS

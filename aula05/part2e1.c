@@ -4,21 +4,23 @@
 
 void delay(unsigned int ms);
 void send2displays(unsigned char value);
+unsigned char toBcd(unsigned char value);
 
 int main(void){
 	TRISB = TRISB & 0x80FF; // RB8-RB14 as output
 	TRISD = TRISD & 0xFF9F; // RD5-RD6 as output
+	TRISE = TRISE & 0xFF00; // RE7-RE0 as output
 	
 	unsigned int i = 0;
 	unsigned int counter = 0;
 	while(1){
 		i = 0;
 		do{
-			send2displays(counter); // Write 0x15 (decimal 15 on the displays)
-			delay(20); // 0,2s = 5 Hz = 4 000 000; ms = 200;
-		}while(++i < 10); //i goes from 1 to 10 to decrease the frequency from 50Hz to 5Hz
-		counter++;
-		counter = counter & 0x00FF; // mod 256
+			send2displays(toBcd(counter)); //write the number on the displays in decimal
+			delay(10); //10ms = 100Hz
+			LATE = (LATE & 0xFF00) | toBcd(counter); // 0xFF00 is used to clean the 8 LSB'S
+		}while(++i < 50); //i goes from 1 to 10 to decrease the frequency from 100Hz to 2Hz
+		if(++counter>=60) counter = 1;
 	}
 	return 0;
 }
@@ -47,6 +49,11 @@ void send2displays(unsigned char value){
 	}
 	
 	displayFlag = !displayFlag;
+}
+
+unsigned char toBcd(unsigned char value)
+{
+	return ((value / 10) << 4) + (value % 10);
 }
 
 void delay(unsigned int ms){
